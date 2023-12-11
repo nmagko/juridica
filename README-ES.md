@@ -20,7 +20,7 @@ web service es la siguiente (puede probarse independientemente en
 postman):
 
 ```
-http://34.16.161.4/consulta-ruc-json.php?ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
+http://IP_PUBLICA_DE_TU_SERVIDOR_WEB/consulta-ruc-json.php?ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
 ```
 
 La llamada retorna el JSON que es obtenido desde ruc.com.pe. La variable

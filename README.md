@@ -17,7 +17,7 @@ contributors and the token to get the information. You can call this web
 service with the URL below. Test it with the Postman or Curl.
 
 ```
-http://34.16.161.4/consulta-ruc-json.php?ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
+http://YOUR_WEB_SERVER_PUBLIC_IP/consulta-ruc-json.php?ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
 ```
 
 The result of the calling web service is a JSON object.
