@@ -1,11 +1,11 @@
 # OBTENCIÓN DE INFORMACIÓN JURÍDICA
 
-## OBJETIVO:
+## OBJETIVO
 
 Implementar un web service que consuma servicios de Sunat para obtener
 datos de persona juridica según RUC.
 
-## DESCRIPCIÓN:
+## DESCRIPCIÓN
 
 Debido que el link provisto en el reto técnico siempre retorna RUC no
 existe, se ha creado un nuevo Web service publicado en GCP, válido por 2
@@ -28,34 +28,34 @@ GET con nombre tipo se ha puesto por comptabilidad con el web service
 provisto en el reto técnico y es opcional para este web service. Para
 ruc.com.pe sólo es necesario el ruc y el token.
 
-### TIPO DE APLICACIÓN:
+### TIPO DE APLICACIÓN
 
 Legacy web service
 
-### MÉTODO:
+### MÉTODO
 
 GET
 
-### RESULTADO RETORNO:
+### RESULTADO RETORNO
 
 JSON
 
-### LENGUAJE DE PROGRAMACIÓN:
+### LENGUAJE DE PROGRAMACIÓN
 
 php
 
-### SERVIDOR WEB:
+### SERVIDOR WEB
 
 Apache
 
-### VM:
+### VM
 
 GCP Compute Engine VM, Debian 11.8.
 
-### PAQUETES INSTALADOS EN VM:
+### PAQUETES INSTALADOS EN VM
 
 apache2, php7.4-curl
 
-### AUTOR:
+### AUTOR
 
 Victor C (aka nmagko)
