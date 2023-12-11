@@ -1,61 +1,55 @@
-# OBTENCIÓN DE INFORMACIÓN JURÍDICA
+# GETTING PERUVIAN LEGAL INFORMATION
 
-## OBJETIVO:
+## GOAL
 
-Implementar un web service que consuma servicios de Sunat para obtener
-datos de persona juridica según RUC.
+Build a web service to call SUNAT public internet services to get
+Peruvian people legal information.
 
-## DESCRIPCIÓN:
+## DESCRIPTION
 
-Debido que el link provisto en el reto técnico siempre retorna RUC no
-existe, se ha creado un nuevo Web service publicado en GCP, válido por 2
-meses o hasta que se acabe el presupuesto, lo que ocurra primero. :))
+It is an App as part of a technical challenge in creating web services
+on GCP and an app to get the Peruvian people's legal information from
+Internal Revenue Services.
 
-Se generó un registro en ruc.com.pe, el token provisto es válido por 7
-días, después de ello debe usted generar su propio registro y generar su
-token para poder continuar usando el Web service, reemplazar el valor de
-ruc con uno válido, también, si usted tiene un token válido, puede
-reemplazarlo en la llamada al web service, la llamada pública a dicho
-web service es la siguiente (puede probarse independientemente en
-postman):
+I used ruc.com.pe to create an account for free for seven days and to
+get a token. The idea is to call the service with the ID of the tax
+contributors and the token to get the information. You can call this web
+service with the URL below. Test it with the Postman or Curl.
 
 ```
-http://34.16.161.4/consulta-ruc-json.php?tipo=2&ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
+http://34.16.161.4/consulta-ruc-json.php?ruc=10111111114&token=79fda70b-89da-4920-a980-9fcc89d71591-f2d2ace8-cf7e-4a9a-acab-0737f8a32258
 ```
 
-La llamada retorna el JSON que es obtenido desde ruc.com.pe. La variable
-GET con nombre tipo se ha puesto por comptabilidad con el web service
-provisto en el reto técnico y es opcional para este web service. Para
-ruc.com.pe sólo es necesario el ruc y el token.
+The result of the calling web service is a JSON object.
 
-### TIPO DE APLICACIÓN:
+### TYPE OF APPLICATION
 
 Legacy web service
 
-### MÉTODO:
+### METHOD
 
 GET
 
-### RESULTADO RETORNO:
+### RETURN
 
 JSON
 
-### LENGUAJE DE PROGRAMACIÓN:
+### PROGRAMMING LANGUAGE
 
 php
 
-### SERVIDOR WEB:
+### WEB SERVER
 
 Apache
 
-### VM:
+### VM
 
 GCP Compute Engine VM, Debian 11.8.
 
-### PAQUETES INSTALADOS EN VM:
+### INSTALLED PACKAGES ON VM
 
 apache2, php7.4-curl
 
-### AUTOR:
+### AUTHOR
 
 Victor C (aka nmagko)

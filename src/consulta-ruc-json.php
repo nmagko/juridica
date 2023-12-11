@@ -1,15 +1,17 @@
 <?php
-// Método GET. RUC a consultar y Token autorizado.
-// Adaptado por Victor C (aka nmagko)
+// METHOD GET. Input RUC and Token.
+// Modified by Victor C (aka nmagko)
+// This program was originally written in Spanish because of the
+// technical challenge, but I rewrote it in English for general use.
 
-// URL de llamada para consultar RUC
+// Calling URL
 $ruta = "https://ruc.com.pe/api/v1/consultas";
 
-// Esta variable es sólo por compatibilidad con el servicio web
-// con método GET provisto en el reto técnico. (Opcional)
+// The "tipo" variable is just for compatibility and not really used in
+// this program.
 $tipo = isset($_GET["tipo"]) ? $_GET["tipo"] : "0";
 
-// Datos de consulta
+// Query data
 $token = $_GET["token"];
 $rucaconsultar = $_GET["ruc"];
 
@@ -20,7 +22,7 @@ $data = array(
 	
 $data_json = json_encode($data);
 
-// Invocamos el servicio a ruc.com.pe
+// Calling the web service in ruc.com.pe
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $ruta);
 curl_setopt(
